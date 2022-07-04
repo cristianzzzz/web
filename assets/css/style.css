@@ -153,14 +153,14 @@ p {
   
 }
 
-.hero-waves {
-  display: block;
-  margin-top: 60px;
-  width: 100%;
-  height: 60px;
-  z-index: 5;
-  position: relative;
+/*--------------------------------------------------------------
+# Varios
+--------------------------------------------------------------*/
+
+#consultaplanes {
+  padding: 20px 0px 0px 0px;
 }
+
 
 /*--------------------------------------------------------------
 # Efectos LOCOS
@@ -189,7 +189,8 @@ p {
   transition: all 0.5s;
   -webkit-text-stroke: 4px #d6f4f4;
   font-variation-settings: "wght" 900, "ital" 1;
-  font-size: 15rem;
+  font-size: 240px;
+  height: auto;
   text-align: center;
   color: transparent;
   font-family: "Meta", sans-serif;
@@ -199,6 +200,7 @@ p {
     25px 25px 0px #f40468,
     45px 45px 10px #482896;
   cursor: pointer;
+  width:auto;
 }
 
 .westnet:hover {
@@ -209,13 +211,19 @@ p {
 /*--------------------------------------------------------------
 # CUBO
 --------------------------------------------------------------*/
-
-.conteiner {
+/* .conteiner {
   height: 60vh;
   width: 30vw;
   position: absolute;
   top: 27vh;
   left: 30vw;
+  transform: translate(-50%, -50%);
+  perspective: 1000px
+} */
+/* .conteiner {
+  height: 60vh;
+  width: 30vw;
+  position: absolute;
   transform: translate(-50%, -50%);
   perspective: 1000px
 }
@@ -226,13 +234,13 @@ p {
   position: absolute;
   top: 100px;
   left: 100px;
-  /* transform: rotate(-90deg); */
+  transform: rotate(-90deg);
   transform-style: preserve-3d;
   animation: animate 3s infinite;
 
-}
+} */
 
-@keyframes animate {
+/* @keyframes animate {
   0% {
     transform: rotateX(45deg) rotateY(-45deg);
   }
@@ -248,9 +256,9 @@ p {
   100% {
     transform: rotateX(45deg) rotateY(-45deg);
   }
-}
+} */
 
-.card {
+/* .card {
   height: 250px;
   width: 250px;
   text-align: center;
@@ -259,7 +267,7 @@ p {
   background: #EE396D;
   border: 4px solid whitesmoke;
   font-size: 32px;
-  /* box-sizing: border-box; */
+  box-sizing: border-box;
   position: absolute;
   transition: all 1s;
   color: #fff;
@@ -272,9 +280,9 @@ p {
     0 0 92px #bc13fe,
     0 0 102px #bc13fe,
     0 0 151px #bc13fe;
-}
+} */
 
-.card {
+/* .card {
   box-shadow:
     inset 0 0 50px #fff,
     inset 20px 0 80px #f0f,
@@ -284,9 +292,9 @@ p {
     0 0 50px #fff,
     -10px 0 80px #f0f,
     10px 0 80px #0ff;
-}
+} */
 
-#front {
+/* #front {
   transform: translateZ(125px);
 }
 #back {
@@ -308,9 +316,9 @@ p {
 #bottom {
   top: 125px;
   transform: rotateX(-90deg);
-}
+} */
 
-input{
+/* input{
   height: 50px;
   width: 100px;
   cursor: pointer;
@@ -334,8 +342,22 @@ input:focus~ .box #top {
 }
 input:focus~ .box #bottom {
   top: 180px;
+} */
+
+.intro,
+.intro a{
+  color:#fff;
+  font-family:
+}
+/* customizable snowflake styling */
+.snowflake {
+  color: #fff;
+  font-size: 1.5em;
+  font-family: Arial;
+  text-shadow: 0 0 1px #000;
 }
 
+@-webkit-keyframes snowflakes-fall{0%{top:-10%}100%{top:100%}}@-webkit-keyframes snowflakes-shake{0%{-webkit-transform:translateX(0px);transform:translateX(0px)}50%{-webkit-transform:translateX(80px);transform:translateX(80px)}100%{-webkit-transform:translateX(0px);transform:translateX(0px)}}@keyframes snowflakes-fall{0%{top:-10%}100%{top:100%}}@keyframes snowflakes-shake{0%{transform:translateX(0px)}50%{transform:translateX(80px)}100%{transform:translateX(0px)}}.snowflake{position:fixed;top:-10%;z-index:9999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;cursor:default;-webkit-animation-name:snowflakes-fall,snowflakes-shake;-webkit-animation-duration:10s,3s;-webkit-animation-timing-function:linear,ease-in-out;-webkit-animation-iteration-count:infinite,infinite;-webkit-animation-play-state:running,running;animation-name:snowflakes-fall,snowflakes-shake;animation-duration:10s,3s;animation-timing-function:linear,ease-in-out;animation-iteration-count:infinite,infinite;animation-play-state:running,running}.snowflake:nth-of-type(0){left:1%;-webkit-animation-delay:0s,0s;animation-delay:0s,0s}.snowflake:nth-of-type(1){left:10%;-webkit-animation-delay:1s,1s;animation-delay:1s,1s}.snowflake:nth-of-type(2){left:20%;-webkit-animation-delay:6s,.5s;animation-delay:6s,.5s}.snowflake:nth-of-type(3){left:30%;-webkit-animation-delay:4s,2s;animation-delay:4s,2s}.snowflake:nth-of-type(4){left:40%;-webkit-animation-delay:2s,2s;animation-delay:2s,2s}.snowflake:nth-of-type(5){left:50%;-webkit-animation-delay:8s,3s;animation-delay:8s,3s}.snowflake:nth-of-type(6){left:60%;-webkit-animation-delay:6s,2s;animation-delay:6s,2s}.snowflake:nth-of-type(7){left:70%;-webkit-animation-delay:2.5s,1s;animation-delay:2.5s,1s}.snowflake:nth-of-type(8){left:80%;-webkit-animation-delay:1s,0s;animation-delay:1s,0s}.snowflake:nth-of-type(9){left:90%;-webkit-animation-delay:3s,1.5s;animation-delay:3s,1.5s}
 
 
 /*--------------------------------------------------------------
@@ -381,7 +403,7 @@ input:focus~ .box #bottom {
   margin-left: 5px;
 }
 
-.navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
+.navbar a:hover, .navbar .active, .navbar , .navbar li:hover > a {
   color: #47b2e4;
 }
 
@@ -425,7 +447,7 @@ input:focus~ .box #bottom {
   font-size: 14px;
   text-transform: none;
   font-weight: 500;
-  color: #0c3c53;
+  color: #00A1CA;
 }
 
 .navbar .dropdown ul a i {
@@ -701,6 +723,11 @@ input:focus~ .box #bottom {
   }
 }
 
+
+
+
+
+
 /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
@@ -832,6 +859,7 @@ section {
   animation-delay: 0.8s;
   margin-top: 6px;
   border: 2px solid #47b2e4;
+
 }
 
 .about .content .btn-learn-more:hover {
@@ -1871,7 +1899,6 @@ section {
   border: 0;
   background: none;
   font-size: 16px;
-  padding: 0 20px;
   background: #47b2e4;
   color: #fff;
   transition: 0.3s;
