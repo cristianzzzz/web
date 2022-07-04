@@ -208,6 +208,27 @@ p {
   text-shadow: none;
 }
 
+@media (max-width: 992px) {
+  .westnet {
+    font-size: 90px;
+  }
+}
+
+@media (max-width: 767px) {
+  .westnet {
+    font-size: 90px;
+  }
+}
+
+@media (max-width: 420px) {
+  .westnet {
+    font-size: 90px;
+  }
+}
+
+
+
+
 /*--------------------------------------------------------------
 # CUBO
 --------------------------------------------------------------*/
@@ -352,7 +373,7 @@ input:focus~ .box #bottom {
 /* customizable snowflake styling */
 .snowflake {
   color: #fff;
-  font-size: 1.5em;
+  font-size: 1em;
   font-family: Arial;
   text-shadow: 0 0 1px #000;
 }
